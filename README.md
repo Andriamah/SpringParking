@@ -1,41 +1,42 @@
 # SpringParking
-Ceci est une application gestion de parking
 
-Cote Admin:
--Gestion de portfeuille (Validation de l'argent par l'admin)  
--Historique du portefeuille pour chaque client  
--Gestion de disponnibilite de parking  
--Gestion de paiment du parking (avec un ticket)  
--Gestion de paiement d'amende puisque le client recevra une amende si le temps passe sur le parking est depassée  
+Ceci est une application de gestion de parking :
 
+- Gestion de portefeuille (Validation de l'argent par l'admin, c'est-à-dire que l'argent utilisé par le client ne sera pas valable sans l'autorisation de l'admin)  
+- Historique du portefeuille pour chaque client  
+- Gestion de la disponibilité de parking  
+- Gestion du paiement du parking (avec un ticket)  
+- Gestion du paiement des amendes puisque le client recevra une amende si le temps passé sur le parking est dépassé  
 
-Pour le testé nous avons déjà une otion pour gerer l'heure afin de voir si c'est déjà depasser ou pas au lieu d'attendre  
+* Pour le tester, nous avons déjà une option pour gérer l'heure afin de voir si c'est déjà dépassé ou pas au lieu d'attendre. 
 
-##Technologie  
- - Spring Boot  
- - Postgres  
- - JSP (Jstl)  
+## Technologies  
+- Spring Boot  
+- Postgres  
+- JSP (Jstl)  
 
 ## Configuration 
 
-- Creer Une base de donnee dans Postgres : au nom de " parking "    
-- Veuillez ajouter le script pour les bases de données : - base.sql  
-                                                            -data.sql
-                                                        
+- Créer une base de données dans Postgres nommée "parking".  
+- Veuillez ajouter le script pour les bases de données : 
+  - `base.sql`  
+  - `data.sql`
 
-- pense à changer le mot de passe et user si besoin dans : parking\src\main\resources\application.properties
-        spring.datasource.url = jdbc:postgresql://localhost:5432/parking
-        spring.datasource.username=postgres
-        spring.datasource.password=mpdprom13 (ici)
-        spring.jpa.show-sql=true 
+- Pensez à changer le mot de passe et l'utilisateur si besoin dans : `parking\src\main\resources\application.properties`
+    ```properties
+    spring.datasource.url = jdbc:postgresql://localhost:5432/parking
+    spring.datasource.username=postgres
+    spring.datasource.password=mpdprom13 (ici)
+    spring.jpa.show-sql=true 
+    ```
 
-- Lancer la commande : si sur windows : mvnw spring-boot:run
-                        Autre : mvn spring-boot:run
+- Lancer la commande : 
+  - Sur Windows : `mvnw spring-boot:run`
+  - Autre : `mvn spring-boot:run`
 
-- Puis lancer le : locahttp://localhost:8080/
+- Puis accéder à : [http://localhost:8080/](http://localhost:8080/)
+  - Côté client : username : client / password : client
+  - Côté admin : username : admin / password : admin
 
-
-
-Ceci est un projet assez lucratif qui me tient aussi à coeur qui est aussi encore en cours de programmation.    
- Bon visionnage !! 
-
+Ceci est un projet assez lucratif qui me tient aussi à cœur et qui est encore en cours de programmation.  
+Bon visionnage !!
