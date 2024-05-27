@@ -16,5 +16,11 @@ Pour le testé nous avons déjà une otion pour gerer l'heure afin de voir si c'
  - Postgres  
  - JSP (Jstl)  
 
+## Configuration 
+- pense à changer le mot de passe dans 
+
+- Veuillez ajouter le script pour les bases de données : Dar
+
+
 Ceci est un projet assez lucratif qui me tient aussi à coeur , Bon visionnage
 
